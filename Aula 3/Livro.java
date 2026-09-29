@@ -17,8 +17,8 @@ public class Livro {
     }
 
     public static void main(String[] args) {
-        Livro l1 = new Livro(); 
-        Livro l2 = new Livro("Por Alfie: Ate o Ultimo Acorde", "Jonnie Dantas"); 
+        Livro l1 = new Livro();
+        Livro l2 = new Livro("Por Alfie: Ate o Ultimo Acorde", "Jonnie Dantas");
 
         l1.exibirDados();
         l2.exibirDados();
