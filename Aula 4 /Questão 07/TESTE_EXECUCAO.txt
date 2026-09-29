@@ -1,0 +1,140 @@
+====================================================
+TESTE DE EXECUCAO - Lista de Atividades - Aula 4
+Compilado e executado com: javac / java (JDK 21)
+====================================================
+
+############## QUESTAO 1 ##############
+=== Saldos iniciais ===
+Ana (ContaCorrente) - Saldo: R$ 100.00
+Bruno (ContaPoupanca) - Saldo: R$ 200.00
+
+=== Depositos ===
+Ana (ContaCorrente) - Saldo: R$ 150.00
+Bruno (ContaPoupanca) - Saldo: R$ 300.00
+
+=== Saques validos ===
+Saque de 30 na corrente (taxa R$ 1,00): true
+Saque de 30 na poupanca (sem taxa): true
+Ana (ContaCorrente) - Saldo: R$ 119.00
+Bruno (ContaPoupanca) - Saldo: R$ 270.00
+
+=== Saques invalidos ===
+Corrente sacar 119 (falta cobrir a taxa): false
+Poupanca sacar 500 (saldo insuficiente): false
+Corrente sacar -10 (valor negativo): false
+
+=== Saldos finais ===
+Ana (ContaCorrente) - Saldo: R$ 119.00
+Bruno (ContaPoupanca) - Saldo: R$ 270.00
+
+############## QUESTAO 2 ##############
+Digite o valor da comissao (R$): 
+=== Salarios calculados ===
+Carlos (matricula 1001) - FuncionarioCLT
+  Salario-base: R$ 3000.00
+  Salario final: R$ 3300.00
+Daniela (matricula 1002) - FuncionarioComissionado
+  Salario-base: R$ 2500.00
+  Salario final: R$ 3000.00
+
+############## QUESTAO 3 ##############
+=== Marina ===
+Marina pratica: natacao, corrida e ciclismo.
+Marina esta nadando.
+Marina esta pedalando.
+Marina esta correndo.
+
+=== Rafael ===
+Rafael pratica: natacao, corrida e ciclismo.
+Rafael esta nadando.
+Rafael esta pedalando.
+Rafael esta correndo.
+
+=== Usando o mesmo objeto por interfaces ===
+Marina esta correndo.
+Marina esta nadando.
+Marina esta pedalando.
+
+############## QUESTAO 4 ##############
+=== Processando pagamentos ===
+Cartao: pagamento de R$ 150.00 aprovado na maquininha.
+Pix: transferencia instantanea de R$ 150.00 realizada.
+Boleto: boleto de R$ 150.00 gerado, aguardando compensacao.
+
+=== Cancelando pagamentos ===
+Cartao: compra estornada na fatura.
+Pix: devolucao enviada para a conta do pagador.
+Boleto: boleto cancelado, nao podera mais ser pago.
+
+############## QUESTAO 5 ##############
+Status: AGUARDANDO_PAGAMENTO
+Pedido #1 (R$ 89.90) - Aguardando pagamento. Finalize a compra para continuar.
+
+Status: PAGO
+Pedido #2 (R$ 250.00) - Pagamento confirmado! Estamos preparando o envio.
+
+Status: ENVIADO
+Pedido #3 (R$ 45.50) - Seu pedido saiu para entrega.
+
+Status: CANCELADO
+Pedido #4 (R$ 300.00) - Pedido cancelado.
+
+=== Avancando o pedido 3 ===
+Pedido #3 (R$ 45.50) - Pedido entregue. Obrigado pela compra!
+
+############## QUESTAO 6 ##############
+=== Lia (BASICO) ===
+  CONSULTAR: PERMITIDO
+  EDITAR: NEGADO
+  GERENCIAR_USUARIOS: NEGADO
+
+=== Mateus (INTERMEDIARIO) ===
+  CONSULTAR: PERMITIDO
+  EDITAR: PERMITIDO
+  GERENCIAR_USUARIOS: NEGADO
+
+=== Nina (ADMIN) ===
+  CONSULTAR: PERMITIDO
+  EDITAR: PERMITIDO
+  GERENCIAR_USUARIOS: PERMITIDO
+
+
+############## QUESTAO 7 ##############
+=== Informacoes dos atletas ===
+Nome: Paulo
+Idade: 28
+Nivel: PROFISSIONAL
+Modalidades: corrida
+
+Nome: Julia
+Idade: 22
+Nivel: AMADOR
+Modalidades: natacao
+
+Nome: Marina
+Idade: 30
+Nivel: PROFISSIONAL
+Modalidades: natacao, ciclismo e corrida
+
+Nome: Rafael
+Idade: 19
+Nivel: NOVATO
+Modalidades: natacao, ciclismo e corrida
+
+=== Executando modalidades pelas interfaces ===
+-- Paulo (PROFISSIONAL)
+Paulo esta correndo.
+-- Julia (AMADOR)
+Julia esta nadando.
+-- Marina (PROFISSIONAL)
+Marina esta correndo.
+Marina esta nadando.
+Marina esta pedalando.
+-- Rafael (NOVATO)
+Rafael esta correndo.
+Rafael esta nadando.
+Rafael esta pedalando.
+
+=== Testando validacoes ===
+Erro: A idade nao pode ser negativa.
+Erro: O nome nao pode ser vazio.
